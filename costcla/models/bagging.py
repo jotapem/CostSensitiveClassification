@@ -22,8 +22,8 @@ from sklearn.utils.random import sample_without_replacement
 from sklearn.ensemble import BaseEnsemble
 
 from ..metrics import savings_score
-from costcla.models import CostSensitiveLogisticRegression
-from costcla.models import BayesMinimumRiskClassifier
+from CostSensitiveClassification.costcla.models import CostSensitiveLogisticRegression
+from CostSensitiveClassification.costcla.models import BayesMinimumRiskClassifier
 
 __all__ = ["BaggingClassifier", ]
 

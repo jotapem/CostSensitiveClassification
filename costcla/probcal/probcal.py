@@ -34,11 +34,11 @@ class ROCConvexHull:
 
     Examples
     --------
-    >>> from costcla.probcal import ROCConvexHull
+    >>> from CostSensitiveClassification.costcla.probcal import ROCConvexHull
     >>> from sklearn.ensemble import RandomForestClassifier
     >>> from sklearn.cross_validation import train_test_split
-    >>> from costcla.datasets import load_creditscoring1
-    >>> from costcla.metrics import brier_score_loss
+    >>> from CostSensitiveClassification.costcla.datasets import load_creditscoring1
+    >>> from CostSensitiveClassification.costcla.metrics import brier_score_loss
     >>> data = load_creditscoring1()
     >>> sets = train_test_split(data.data, data.target, data.cost_mat, test_size=0.33, random_state=0)
     >>> X_train, X_test, y_train, y_test, cost_mat_train, cost_mat_test = sets

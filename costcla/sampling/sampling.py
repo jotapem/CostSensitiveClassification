@@ -84,8 +84,8 @@ def smote(X, y, cost_mat=None, per=0.5):
 
     Examples
     --------
-    >>> from costcla.datasets import load_creditscoring1
-    >>> from costcla.sampling import smote
+    >>> from CostSensitiveClassification.costcla.datasets import load_creditscoring1
+    >>> from CostSensitiveClassification.costcla.sampling import smote
     >>> data = load_creditscoring1()
     >>> data_smote, target_smote = smote(data.data, data.target, per=0.7)
     >>> # Size of each training set

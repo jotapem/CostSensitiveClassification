@@ -42,7 +42,7 @@ def binary_classification_metrics(y_true, y_pred, y_prob):
 
     Examples
     --------
-    >>> from costcla.metrics import binary_classification_metrics
+    >>> from CostSensitiveClassification.costcla.metrics import binary_classification_metrics
     >>> y_pred = [0, 1, 0, 0]
     >>> y_true = [0, 1, 1, 0]
     >>> y_prob = [0.2, 0.8, 0.4, 0.3]

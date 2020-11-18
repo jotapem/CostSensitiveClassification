@@ -49,9 +49,9 @@ def cost_sampling(X, y, cost_mat, method='RejectionSampling', oversampling_norm=
     --------
     >>> from sklearn.ensemble import RandomForestClassifier
     >>> from sklearn.cross_validation import train_test_split
-    >>> from costcla.datasets import load_creditscoring1
-    >>> from costcla.sampling import cost_sampling, undersampling
-    >>> from costcla.metrics import savings_score
+    >>> from CostSensitiveClassification.costcla.datasets import load_creditscoring1
+    >>> from CostSensitiveClassification.costcla.sampling import cost_sampling, undersampling
+    >>> from CostSensitiveClassification.costcla.metrics import savings_score
     >>> data = load_creditscoring1()
     >>> sets = train_test_split(data.data, data.target, data.cost_mat, test_size=0.33, random_state=0)
     >>> X_train, X_test, y_train, y_test, cost_mat_train, cost_mat_test = sets

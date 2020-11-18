@@ -47,7 +47,7 @@ def load_churn():
     --------
     Let's say you are interested in the samples 10, 25, and 50
 
-    >>> from costcla.datasets import load_churn
+    >>> from CostSensitiveClassification.costcla.datasets import load_churn
     >>> data = load_churn()
     >>> data.target[[10, 18, 24]]
     array([0, 0, 1])
@@ -107,7 +107,7 @@ def load_bankmarketing(cost_mat_parameters=None):
     --------
     Let's say you are interested in the samples 10, 25, and 50
 
-    >>> from costcla.datasets import load_bankmarketing
+    >>> from CostSensitiveClassification.costcla.datasets import load_bankmarketing
     >>> data = load_bankmarketing()
     >>> data.target[[10, 25, 319]]
     array([0, 0, 1])
@@ -210,7 +210,7 @@ def load_creditscoring1(cost_mat_parameters=None):
     --------
     Let's say you are interested in the samples 10, 25, and 50
 
-    >>> from costcla.datasets import load_creditscoring1
+    >>> from CostSensitiveClassification.costcla.datasets import load_creditscoring1
     >>> data = load_creditscoring1()
     >>> data.target[[10, 17, 400]]
     array([0, 1, 0])
@@ -279,7 +279,7 @@ def load_creditscoring2(cost_mat_parameters=None):
     --------
     Let's say you are interested in the samples 10, 25, and 50
 
-    >>> from costcla.datasets import load_creditscoring2
+    >>> from CostSensitiveClassification.costcla.datasets import load_creditscoring2
     >>> data = load_creditscoring2()
     >>> data.target[[10, 17, 50]]
     array([1, 0, 0])

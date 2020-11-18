@@ -62,7 +62,7 @@ def cost_loss(y_true, y_pred, cost_mat):
     Examples
     --------
     >>> import numpy as np
-    >>> from costcla.metrics import cost_loss
+    >>> from CostSensitiveClassification.costcla.metrics import cost_loss
     >>> y_pred = [0, 1, 0, 0]
     >>> y_true = [0, 1, 1, 0]
     >>> cost_mat = np.array([[4, 1, 0, 0], [1, 3, 0, 0], [2, 3, 0, 0], [2, 1, 0, 0]])
@@ -122,7 +122,7 @@ def savings_score(y_true, y_pred, cost_mat):
     Examples
     --------
     >>> import numpy as np
-    >>> from costcla.metrics import savings_score, cost_loss
+    >>> from CostSensitiveClassification.costcla.metrics import savings_score, cost_loss
     >>> y_pred = [0, 1, 0, 0]
     >>> y_true = [0, 1, 1, 0]
     >>> cost_mat = np.array([[4, 1, 0, 0], [1, 3, 0, 0], [2, 3, 0, 0], [2, 1, 0, 0]])
@@ -183,7 +183,7 @@ def brier_score_loss(y_true, y_prob):
     Examples
     --------
     >>> import numpy as np
-    >>> from costcla.metrics import brier_score_loss
+    >>> from CostSensitiveClassification.costcla.metrics import brier_score_loss
     >>> y_true = [0, 1, 1, 0]
     >>> y_prob = [0.1, 0.9, 0.8, 0.3]
     >>> brier_score_loss(y_true, y_prob) # doctest: +ELLIPSIS

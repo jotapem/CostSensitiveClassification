@@ -155,9 +155,9 @@ class CostSensitiveLogisticRegression(BaseEstimator):
     --------
     >>> from sklearn.linear_model import LogisticRegression
     >>> from sklearn.cross_validation import train_test_split
-    >>> from costcla.datasets import load_creditscoring2
-    >>> from costcla.models import CostSensitiveLogisticRegression
-    >>> from costcla.metrics import savings_score
+    >>> from CostSensitiveClassification.costcla.datasets import load_creditscoring2
+    >>> from CostSensitiveClassification.costcla.models import CostSensitiveLogisticRegression
+    >>> from CostSensitiveClassification.costcla.metrics import savings_score
     >>> data = load_creditscoring2()
     >>> sets = train_test_split(data.data, data.target, data.cost_mat, test_size=0.33, random_state=0)
     >>> X_train, X_test, y_train, y_test, cost_mat_train, cost_mat_test = sets

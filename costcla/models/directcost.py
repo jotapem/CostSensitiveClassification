@@ -31,9 +31,9 @@ class BayesMinimumRiskClassifier(BaseEstimator):
     --------
     >>> from sklearn.ensemble import RandomForestClassifier
     >>> from sklearn.cross_validation import train_test_split
-    >>> from costcla.datasets import load_creditscoring1
-    >>> from costcla.models import BayesMinimumRiskClassifier
-    >>> from costcla.metrics import savings_score
+    >>> from CostSensitiveClassification.costcla.datasets import load_creditscoring1
+    >>> from CostSensitiveClassification.costcla.models import BayesMinimumRiskClassifier
+    >>> from CostSensitiveClassification.costcla.metrics import savings_score
     >>> data = load_creditscoring1()
     >>> sets = train_test_split(data.data, data.target, data.cost_mat, test_size=0.33, random_state=0)
     >>> X_train, X_test, y_train, y_test, cost_mat_train, cost_mat_test = sets
@@ -173,9 +173,9 @@ class ThresholdingOptimization():
     --------
     >>> from sklearn.ensemble import RandomForestClassifier
     >>> from sklearn.cross_validation import train_test_split
-    >>> from costcla.datasets import load_creditscoring1
-    >>> from costcla.models import ThresholdingOptimization
-    >>> from costcla.metrics import savings_score
+    >>> from CostSensitiveClassification.costcla.datasets import load_creditscoring1
+    >>> from CostSensitiveClassification.costcla.models import ThresholdingOptimization
+    >>> from CostSensitiveClassification.costcla.metrics import savings_score
     >>> data = load_creditscoring1()
     >>> sets = train_test_split(data.data, data.target, data.cost_mat, test_size=0.33, random_state=0)
     >>> X_train, X_test, y_train, y_test, cost_mat_train, cost_mat_test = sets
